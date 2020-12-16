@@ -84,8 +84,9 @@ function viewDept() {
   connection.query(query, function(err, res) {
     if (err) throw err;
     for (var i = 0; i < res.length; i++) {
-      console.log(res);
+      console.log(res[i]);
     }
     runTrackerChoices()
   });
 }
+
